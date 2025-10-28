@@ -1,12 +1,6 @@
 {
+  "version": 2,
   "buildCommand": "npm run build",
-  "outputDirectory": ".mastra/dist",
-  "installCommand": "npm install",
-  "framework": null,
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/api/index"
-    }
-  ]
+  "installCommand": "npm install && cd .mastra/output && npm install",
+  "startCommand": "cd .mastra/output && npm start"
 }
