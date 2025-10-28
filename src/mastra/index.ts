@@ -4,6 +4,7 @@ import { LibSQLStore } from "@mastra/libsql";
 import { weatherAgent } from "./agents/weatherAgent";
 import { a2aAgentRoute } from "../routes/a2aRouteHandler";
 import { VercelDeployer } from "@mastra/deployer-vercel";
+import { NetlifyDeployer } from "@mastra/deployer-netlify";
 
 export const mastra = new Mastra({
   agents: { weatherAgent },
@@ -22,5 +23,5 @@ export const mastra = new Mastra({
     },
     apiRoutes: [a2aAgentRoute],
   },
-  deployer: new VercelDeployer(),
+  deployer: new NetlifyDeployer(),
 });
