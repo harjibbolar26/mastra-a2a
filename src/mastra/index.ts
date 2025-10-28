@@ -23,5 +23,5 @@ export const mastra = new Mastra({
     },
     apiRoutes: [a2aAgentRoute],
   },
-  deployer: new NetlifyDeployer(),
+  // deployer: new NetlifyDeployer(),
 });
