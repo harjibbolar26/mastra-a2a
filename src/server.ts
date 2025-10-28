@@ -1,10 +1,14 @@
-import dotenv from "dotenv"
-import app from "./apps";
+// import dotenv from "dotenv"
+// import app from "./apps";
 
-dotenv.config()
+// dotenv.config()
 
-const PORT = process.env.PORT || 4040;
+// const PORT = process.env.PORT || 4040;
 
-app.listen(PORT, () => {
-    console.log(`Server running successfully on http://localhost:${PORT}`)
-})
+// app.listen(PORT, () => {
+//     console.log(`Server running successfully on http://localhost:${PORT}`)
+// })
+
+import mastraApp from '../.mastra/output/index.mjs';
+
+export default mastraApp;
